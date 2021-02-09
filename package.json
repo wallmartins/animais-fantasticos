@@ -8,7 +8,6 @@
     "build": "webpack --mode production",
     "dev": "webpack --mode development --watch"
   },
-  "author": "Wallace Martins",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.12.13",
