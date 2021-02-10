@@ -1,8 +1,8 @@
 import SmoothScroll from './modules/smooth-scroll.js';
 import Accordion from './modules/animation-accordion.js';
 import TabNav from './modules/animation-tab-nav.js';
+import Modal from './modules/modal.js';
 import initDataset from './modules/set-dataset.js';
-import initModal from './modules/modal.js';
 import initTooltip from './modules/tooltip.js';
 import initDropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
@@ -20,8 +20,10 @@ accordion.init();
 const tabnav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
 tabnav.init();
 
+const modal = new Modal('[data-modal="open"]', '[data-modal="close"]', '[data-modal="container"]');
+modal.init();
+
 initDataset();
-initModal();
 initTooltip();
 initDropdownMenu();
 initMenuMobile();
