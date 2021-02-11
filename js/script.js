@@ -3,7 +3,6 @@ import Accordion from './modules/animation-accordion.js';
 import TabNav from './modules/animation-tab-nav.js';
 import Modal from './modules/modal.js';
 import ToolTip from './modules/tooltip.js';
-import initDataset from './modules/set-dataset.js';
 import DropdownMenu from './modules/dropdown-menu.js';
 import MenuMobile from './modules/menu-mobile.js';
 import HourOperation from './modules/hour-operation.js';
@@ -37,8 +36,6 @@ menuMobile.init();
 
 const operation = new HourOperation('[data-weak]', 'open');
 operation.init();
-
-initDataset();
 
 fetchAnimals('js/animalApi.json', '.numbers-grid');
 fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
