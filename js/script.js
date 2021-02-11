@@ -4,7 +4,7 @@ import TabNav from './modules/animation-tab-nav.js';
 import Modal from './modules/modal.js';
 import ToolTip from './modules/tooltip.js';
 import initDataset from './modules/set-dataset.js';
-import initDropdownMenu from './modules/dropdown-menu.js';
+import DropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initHourOperation from './modules/hour-operation.js';
 import fetchAnimals from './modules/animals-fetch.js';
@@ -29,8 +29,10 @@ toolTip.init();
 const animateScroll = new AnimaScroll('[data-anime="scroll"]');
 animateScroll.init();
 
+const dropdownMenu = new DropdownMenu('[data-dropdown]');
+dropdownMenu.init();
+
 initDataset();
-initDropdownMenu();
 initMenuMobile();
 initHourOperation();
 
