@@ -7,7 +7,7 @@ import initDataset from './modules/set-dataset.js';
 import initDropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initHourOperation from './modules/hour-operation.js';
-import initFetchAnimals from './modules/animals-fetch.js';
+import fetchAnimals from './modules/animals-fetch.js';
 import initFetchBitcoin from './modules/bitcoin-fetch.js';
 import initAnimationScroll from './modules/animation-scroll.js';
 
@@ -30,6 +30,6 @@ initDataset();
 initDropdownMenu();
 initMenuMobile();
 initHourOperation();
-initFetchAnimals();
+fetchAnimals('js/animalApi.json', '.numbers-grid');
 initFetchBitcoin();
 initAnimationScroll();
