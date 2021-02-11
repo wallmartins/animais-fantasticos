@@ -26,6 +26,9 @@ modal.init();
 const toolTip = new ToolTip('[data-tooltip]');
 toolTip.init();
 
+const animateScroll = new AnimaScroll('[data-anime="scroll"]');
+animateScroll.init();
+
 initDataset();
 initDropdownMenu();
 initMenuMobile();
@@ -33,6 +36,3 @@ initHourOperation();
 
 fetchAnimals('js/animalApi.json', '.numbers-grid');
 fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
-
-const animateScroll = new AnimaScroll('[data-anime="scroll"]');
-animateScroll.init();
