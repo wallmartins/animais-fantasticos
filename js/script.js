@@ -6,7 +6,7 @@ import ToolTip from './modules/tooltip.js';
 import initDataset from './modules/set-dataset.js';
 import DropdownMenu from './modules/dropdown-menu.js';
 import MenuMobile from './modules/menu-mobile.js';
-import initHourOperation from './modules/hour-operation.js';
+import HourOperation from './modules/hour-operation.js';
 import fetchAnimals from './modules/animals-fetch.js';
 import fetchBitcoin from './modules/bitcoin-fetch.js';
 import AnimaScroll from './modules/anima-scroll.js';
@@ -35,8 +35,10 @@ dropdownMenu.init();
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
 
+const operation = new HourOperation('[data-weak]', 'open');
+operation.init();
+
 initDataset();
-initHourOperation();
 
 fetchAnimals('js/animalApi.json', '.numbers-grid');
 fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
