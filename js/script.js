@@ -5,7 +5,7 @@ import Modal from './modules/modal.js';
 import ToolTip from './modules/tooltip.js';
 import initDataset from './modules/set-dataset.js';
 import DropdownMenu from './modules/dropdown-menu.js';
-import initMenuMobile from './modules/menu-mobile.js';
+import MenuMobile from './modules/menu-mobile.js';
 import initHourOperation from './modules/hour-operation.js';
 import fetchAnimals from './modules/animals-fetch.js';
 import fetchBitcoin from './modules/bitcoin-fetch.js';
@@ -32,8 +32,10 @@ animateScroll.init();
 const dropdownMenu = new DropdownMenu('[data-dropdown]');
 dropdownMenu.init();
 
+const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
+menuMobile.init();
+
 initDataset();
-initMenuMobile();
 initHourOperation();
 
 fetchAnimals('js/animalApi.json', '.numbers-grid');
