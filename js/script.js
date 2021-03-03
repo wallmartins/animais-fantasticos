@@ -9,6 +9,7 @@ import HourOperation from './modules/hour-operation.js';
 import fetchAnimals from './modules/animals-fetch.js';
 import fetchBitcoin from './modules/bitcoin-fetch.js';
 import AnimaScroll from './modules/anima-scroll.js';
+import SlideNav from './modules/slide.js';
 
 const smoothScroll = new SmoothScroll('[data-menu="smooth"] a[href^="#"]');
 smoothScroll.init();
@@ -39,3 +40,7 @@ operation.init();
 
 fetchAnimals('js/animalApi.json', '.numbers-grid');
 fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
+
+const slide = new SlideNav('.slide', '.slide-wrapper');
+slide.init();
+slide.addControl('.custom-controls');
